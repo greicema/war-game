@@ -19,3 +19,5 @@ function start() {
         $("#fundogame").css("background-position", esquerda - 1);
     }
 }
+
+//teste
