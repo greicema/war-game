@@ -125,9 +125,7 @@ function start() {
         if (posicaoX > 906) {
 
             $("#amigo").css("left", 0);
-
         }
-
     }
 
     function disparo() {
@@ -314,7 +312,7 @@ function start() {
 
     function reposicionaAmigo() {
 
-        var tempoAmigo = window.setInterval(reposiciona6, parseInt(Math.random() * 4000)); //Tentar fazer com o amigo surja na tela em segundos aletórios
+        var tempoAmigo = window.setInterval(reposiciona6, (Math.random() * 4000)); //Tentar fazer com o amigo surja na tela em segundos aletórios
 
         function reposiciona6() {
             window.clearInterval(tempoAmigo);
@@ -394,9 +392,9 @@ function start() {
 
         $("#fundogame").append("<div id='fim'></div>");
 
-        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + " e você salvou " + salvos + " amigos" +
+        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi " + pontos + " e você salvou " + salvos + " amigos" +
             "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3 > </div>");
-    } // Fim da função gameOver();
+    }
 
 }
 
